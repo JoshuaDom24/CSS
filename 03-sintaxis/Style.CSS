@@ -1,0 +1,19 @@
+/* Sintáxis
+Se usa para defnir estilos que se aplican a los elementos de una página web
+
+Const de 3 componentes principales
+
+Selector {
+ 
+Propiedad: valor; // Puno y con despues de cada valor Propiedad: valor; // ; Se puede omitir en la ultima propiedad
+
+
+ }
+
+ */
+
+ h1{
+  color: orange; 
+  font-size: 120 px;
+  font-family: sans-serif
+ }
