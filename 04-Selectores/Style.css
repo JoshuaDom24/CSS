@@ -9,12 +9,40 @@ Tipos de selectores
  -Selector Universal
  -Selectores de tipo
  
- 2. Selectorez de Clase
+ 2. Selectores de Clase
+
+ Seleccionan los elementos que tienen una clase especifica.
+
+ Se usa la notación de punto (.) antes del nombre de la clase
  
+ 
+ .nombreclase {
+  propiedad: valor;
+  } -->
+
+<!-- Emmet SC main>section>h2-->
+
  3. Selectores de ID
+
+ Sleccionan un elemento único con un indetificador específico.
+
+ Se usa el la 'notación' de numeral (#) antes del nombre del id
  
+ #nombreId {
+   propiedad: valor;
+  }
+
  4. Selectores combinados 
   -Decendientes
+
+  Seleccionan elementos dentro de otros elementos
+
+  elemento elementointerno {
+  Propiedad: valor;
+  }
+
+
+
   -Hijo directo
   -Elemento adyaciente
   -Hermano general
@@ -37,7 +65,7 @@ Tipos de selectores
     /* Universal -> Seleccionar todos los elementos de un documento */
 
     *{
-      border: 2px solid red;
+      /* border: 2px solid red; */
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -48,3 +76,43 @@ Tipos de selectores
      }
      p{font-size: 24px;}
      header {background-color: lightgreen;}
+
+     /*  Selector de clase*/
+
+ .content{
+  background-color:gold;
+  padding: 48px;
+ }
+
+ .hero{
+background-color: cadetblue;
+padding: 24px;
+ }
+
+ .hero-title {
+background-color:coral;
+padding: 16px;
+  color:blanchedalmond;
+  text-align: center;
+ }
+
+/* Selector de Id */
+
+#About-title {
+  color: chocolate;
+  font-size: 90px;
+}
+
+/* Combinado - Elementos descendientes */
+
+aside section {
+background-color: cyan;
+padding: 50px;
+}
+
+.aside-section h3 {
+  color:black;
+  text-align: right;
+  padding: 30px;
+background-color: greenyellow; 
+  ;}
