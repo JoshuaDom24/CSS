@@ -44,16 +44,59 @@ Tipos de selectores
 
 
   -Hijo directo
+
+  Selecciona elementos que son hijos directos de un padre.
+
+  elemento padre > ElementosHijos {
+ Propiedad: valor;
+}
   -Elemento adyaciente
+
+  Selecciona el primer elemento inmediatamente depués de otro. (su hermano inmediato o en inglés siblings)
+
+  elemento + elemento adjacente {
+   propiedad: valores;
+   }
   -Hermano general
+  Selecciona todos los elementos hermanos, después de un elemento
+
+  elemento ~ elementohermano {
+  propiedad: valor;
+}
   
   5. Selectores de Aributos 
    -Atributo
+
+   Selecciona elementos según el atributo que indiquemos. Sin importar su valor
+
+   elemento [atributo] {
+    propiedad: valor;
+}
+
    -Atributo-Valor
+
+   Selecciona elementos según el atributo y rl valor que indiquemos.
+
+   elemento[atributo=valor] {
+   propiedad: valor;
+}
    
    6.Selectores avanzados
     -Pseudo-Clases
+
+    Seleccionamos elementos en un estado en particular
+
+    elemento:pesudoclase {
+    propiedad:valor;
+}
+
     -Pseudo-elementos
+
+    Seleccionan  partes específicas de n elemento en html
+
+    elemento::pesudoelemento {
+    propiedad: valor;
+}
     
     */
 
@@ -116,3 +159,68 @@ padding: 50px;
   padding: 30px;
 background-color: greenyellow; 
   ;}
+
+  /* Combinadoas hijos directos */
+
+  ul > li {
+    background-color: hotpink;
+  }
+
+  .lista > li {
+    font-size: 45px;
+    color: #ffffff;
+  }
+
+  /* Combinados - Elemento adyacente */
+
+  h3 + ul {
+    list-style: none;
+  }
+
+  .puchinguito + li {
+    color: red;
+  }
+
+  /* Combinados - Hermano general */
+
+  .puchinguito + li ~ li {
+    background-color: dodgerblue;
+  }
+
+  .tercero ~ li {
+    color: black;
+    font-size: 40px;
+  }
+
+  /* Selector de atributo */
+
+  a[href]{
+    display: block;
+    text-decoration: none;
+    color: magenta;
+  }
+
+  /* Selector de atributo con valor */
+  a[href="https://www.instagram.com"] {
+    font-size: 48px;
+    color: wheat;
+  }
+
+  /* Pesudo clases */
+
+a:hover {
+background-color: purple;
+color: white;
+}
+
+a:focus {
+  border: 10px solid red;
+}
+
+a::after{
+  content: "🔥";
+}
+
+a::before {
+  content: "este es un enlace hacia: ";
+}
