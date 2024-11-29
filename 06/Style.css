@@ -1,0 +1,64 @@
+
+/* 
+
+
+Por nombre de la familia tipográfica 
+-Arial
+-Times New Roman
+-Verdana
+-Geneva
+-...
+
+Los valores que tienen más de una palabra, se escriben entre comillas ("") o comillas simples ('')
+
+*Se recomienda usar fuentes de respaldo, si por alguna razón no se carga la fuente principak, se cargarán las fuentes secundarias
+
+- Arial, Verdana, Sans Serif
+- "Times New Roman", "Currier New", serif
+
+Fuentes Personalizadas
+ *Fuentes externas
+
+ Son recursos que traemos de servidores remotos.
+
+ -Google Fonts
+ -Adobe Fonts
+ -Font Squirlt
+ -...
+
+ *Fuentes internas
+
+ Son los recursos que tenemos en nuestro propio sevidor o sistema de carpetas
+
+ -Descargadas
+ -Guardamos en una carpeta específica de nuestro sitio web
+ 
+*/
+
+
+
+
+
+
+html {
+  /* Por estilo o categoría */
+  font-family: serif; /* Default, patinada */
+  font-family: sans-serif; /* Sin patines, palo seco, geométricas */
+  font-family: monospace; /* Mono-espaciada */
+  font-family: cursive; /* Script o escritura a mano */
+  font-family: fantasy; /* Decorativas con "glifos" no convencionales */
+
+  /* Por nombre de familia tipográfica */
+  font-family: Arial;
+  font-family: "Times New Roman";
+  font-family: Verdana;
+  font-family: Geneva;
+  font-family: "Gill Sans";
+  font-family: "Courrier Sans";
+
+  /* Fuentes de respaldo */
+
+  font-family:Arial, Helvetica, sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
